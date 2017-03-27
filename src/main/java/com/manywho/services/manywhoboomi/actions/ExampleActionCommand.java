@@ -10,7 +10,7 @@ import com.manywho.services.manywhoboomi.types.ExampleResponse;
 import javax.inject.Inject;
 
 
-public class ExampleActionCommand implements ActionCommand<ServiceConfiguration, LaunchFlowAction, LaunchFlowAction.Input, LaunchFlowAction.Output> {
+public class ExampleActionCommand implements ActionCommand<ServiceConfiguration, ExampleAction, ExampleAction.Input, ExampleAction.Output> {
 
     private ObjectMapper objectMapper;
 
@@ -21,11 +21,11 @@ public class ExampleActionCommand implements ActionCommand<ServiceConfiguration,
     }
 
     @Override
-    public ActionResponse<LaunchFlowAction.Output> execute(ServiceConfiguration serviceConfiguration, ServiceRequest serviceRequest, LaunchFlowAction.Input input) {
+    public ActionResponse<ExampleAction.Output> execute(ServiceConfiguration serviceConfiguration, ServiceRequest serviceRequest, ExampleAction.Input input) {
        ExampleResponse rateResponse = new ExampleResponse("1", "example decription");
         // get input properties
         //input.getAuthToken()
-        ActionResponse<LaunchFlowAction.Output> response = new ActionResponse<>(new LaunchFlowAction.Output(rateResponse), InvokeType.Forward);
+        ActionResponse<ExampleAction.Output> response = new ActionResponse<>(new ExampleAction.Output(rateResponse), InvokeType.Forward);
 
         return response;
     }

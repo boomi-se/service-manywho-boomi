@@ -29,6 +29,7 @@ public class RawTypeProvider implements TypeProvider {
     public List<TypeElement> describeTypes(DescribeServiceRequest describeServiceRequest) {
         ServiceConfiguration serviceConfiguration = configurationParser.from(describeServiceRequest);
         // create dynamic types
+        // call describe manager
         return new ArrayList<>();
     }
 }
