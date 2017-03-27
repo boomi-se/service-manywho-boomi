@@ -1,0 +1,7 @@
+{
+  "name": "ManyWho Boomi Service",
+  "description": "A plugin that enables integration of Boomi into ManyWho",
+  "repository": "https://github.com/manywho/manywho-boomi",
+  "logo": "",
+  "keywords": ["manywho", "boomi", "plugin", "workflow"]
+}

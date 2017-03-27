@@ -1,0 +1,2 @@
+service:
+  image: docker.manywho.net/manywho/service-manywhoboomi:$IMAGE_TAG
